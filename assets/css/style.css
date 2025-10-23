@@ -1,0 +1,340 @@
+/************************************* main-banner css start *************************************/
+.main-banner h2 {
+    line-height: 1.16;
+}
+/************************************* main-banner css end *************************************/
+
+/************************************* main-counter css start *************************************/
+/*====================================
+    main-counter css
+====================================*/
+.main-counter {
+    position: relative;
+    z-index: 1;
+}
+.main-counter::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: calc(83.33% - 7.5px);
+    background-color: var(--body-bgcolor);
+    z-index: -1;
+}
+.main-counter .row {
+    margin-top: -15px;
+}
+.main-counter .row>* {
+    margin-top: 15px;
+}
+@media (min-width: 576px) {
+    .main-counter::after {
+        height: calc(83.33% - 15px);
+    }
+    .main-counter .row {
+        margin-top: -30px;
+    }
+    .main-counter .row>* {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 768px) {
+    .main-counter::after {
+        height: calc(75% - 15px);
+    }
+}
+@media (min-width: 1200px) {
+    .main-counter::after {
+        height: calc(50% - 15px);
+    }
+}
+/************************************* main-counter css end *************************************/
+
+/************************************* main-demo css start *************************************/
+/*====================================
+    main-demo css
+====================================*/
+.main-demo .section-capture h6 span {
+    background: linear-gradient(to bottom, var(--dominant-font-color)30%, rgba(255, 255, 255, 0)80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (min-width: 1600px) {
+    .main-demo .section-capture h6 {
+        font-size: 120px;
+    }
+}
+/************************************* main-demo css end *************************************/
+
+/************************************* banner-area css start *************************************/
+/*====================================
+    banner-area css
+====================================*/
+@media (min-width: 1600px) {
+    .banner-area .banner-content {
+        padding-left: 30px;
+    }
+    .banner-area .banner-content h2 {
+        font-size: 48px;
+    }
+    .banner-area .banner-content a {
+        margin-top: 36px;
+    }
+}
+/************************************* banner-area css end *************************************/
+
+/************************************* feature-area css start *************************************/
+/*====================================
+    feature-area css
+====================================*/
+.feature-area .feature-content {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23E2E2E2FF' stroke-width='2' stroke-dasharray='8%2c 8' stroke-dashoffset='2' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+/************************************* feature-area css end *************************************/
+
+/************************************* inner-demo css start *************************************/
+/*====================================
+    inner-demo tab css
+====================================*/
+.inner-demo .tab ul.nav-tabs li a {
+    color: var(--heading-font-color);
+    background-color: transparent;
+    border: 1px solid transparent;
+    -webkit-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+.inner-demo .tab ul.nav-tabs li a:hover {
+    color: var(--dominant-font-color);
+}
+.inner-demo .tab ul.nav-tabs li a.active {
+    color: var(--dominant-font-color);
+    border-color: var(--dominant-font-color)
+}
+
+/*====================================
+    inner-demo-slider css
+====================================*/
+@media (min-width: 576px) {
+    .inner-demo {
+        overflow: hidden;
+    }
+    .inner-demo .inner-slider {
+        margin: 0px calc(-100% - 30px);
+    }
+}
+@media (min-width: 768px) {
+    .inner-demo .inner-slider {
+        margin: 0px calc(-50% - 15px);
+    }
+}
+
+/*====================================
+    inner-demo-slider swiper css
+====================================*/
+.inner-demo .inner-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+    width: 100%;
+}
+@media (min-width: 576px) {
+    .inner-demo .inner-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 33.33%;
+    }
+}
+@media (min-width: 768px) {
+    .inner-demo .inner-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 25%;
+    }
+}
+/************************************* inner-demo css end *************************************/
+
+/************************************* other-demo css start *************************************/
+/*====================================
+    other-demo tab css
+====================================*/
+.other-demo .tab ul.nav-tabs li a {
+    color: var(--heading-font-color);
+    background-color: transparent;
+    border: 1px solid transparent;
+    -webkit-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+.other-demo .tab ul.nav-tabs li a:hover {
+    color: var(--dominant-font-color);
+}
+.other-demo .tab ul.nav-tabs li a.active {
+    color: var(--dominant-font-color);
+    border-color: var(--dominant-font-color);
+}
+
+/*====================================
+    other-demo-slider css
+====================================*/
+.other-demo {
+    overflow: hidden;
+}
+.other-demo .other-slider {
+    margin: 0px calc(-100% - 15px);
+}
+@media (min-width: 576px) {
+    .other-demo .other-slider {
+        margin: 0px calc(-100% - 30px);
+    }
+}
+
+/*====================================
+    other-demo-slider swiper css
+====================================*/
+.other-demo .other-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .other-demo .other-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 50%;
+    }
+}
+/************************************* other-demo css end *************************************/
+
+/************************************* header-footer css start *************************************/
+/*====================================
+    header-footer css
+====================================*/
+.header-footer .row-mtm30 .header-footer-img:last-child {
+    position: relative;
+}
+.header-footer .row-mtm30 .header-footer-img:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: -10px;
+    right: 0px;
+    background: linear-gradient(360deg, rgba(239, 247, 243, 1) 0, rgba(239, 247, 243, 0) 100%);
+    border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+/************************************* header-footer css end *************************************/
+
+/************************************* ready-section css start *************************************/
+/*====================================
+    ready-section-slider swiper css
+====================================*/
+.ready-section .ready-section-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .ready-section .ready-section-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .ready-section .ready-section-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 33.33%;
+    }
+}
+
+/*====================================
+    ready-section css
+====================================*/
+.ready-section .ready-section-slider.swiper > .swiper-wrapper {
+    transition-timing-function: linear;
+}
+/************************************* ready-section css end *************************************/
+
+/************************************* html-demo css start *************************************/
+/*====================================
+    html-demo-slider css
+====================================*/
+@media (min-width: 576px) {
+    .html-demo {
+        overflow: hidden;
+    }
+    .html-demo .html-demo-slider {
+        margin: 0px calc(-100% - 30px);
+    }
+}
+@media (min-width: 768px) {
+    .html-demo .html-demo-slider {
+        margin: 0px calc(-50% - 15px);
+    }
+}
+@media (min-width: 992px) {
+    .html-demo .html-demo-slider {
+        margin: 0px calc(-33.33% - 10px);
+    }
+}
+
+/*====================================
+    html-demo-slider swiper css
+====================================*/
+.html-demo .html-demo-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+    width: 100%;
+}
+@media (min-width: 576px) {
+    .html-demo .html-demo-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 33.33%;
+    }
+}
+@media (min-width: 768px) {
+    .html-demo .html-demo-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 25%;
+    }
+}
+@media (min-width: 992px) {
+    .html-demo .html-demo-slider.swiper:not(.swiper-initialized) .swiper-slide:not([style]) {
+        width: 20%;
+    }
+}
+
+/*====================================
+    html-demo-content css
+====================================*/
+.html-demo .html-demo-slider .html-demo-content a {
+    -webkit-transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out,background-color 0.5s ease-in-out,border-color 0.5s ease-in-out;
+}
+.html-demo .html-demo-slider .html-demo-content:hover a {
+    color: var(--extra-font-color);
+    background-color: var(--dominant-font-color);
+    border-color: var(--dominant-font-color);
+}
+/************************************* html-demo css end *************************************/
+
+/************************************* scroll-text css start *************************************/
+/*====================================
+    scroll-text css
+====================================*/
+.scroll-text .scroll-text-row {
+    -webkit-animation: slide-left 20s linear infinite;
+    animation: slide-left 20s linear infinite;
+}
+.scroll-text:hover .scroll-text-row,
+.scroll-text:focus .scroll-text-row {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+.scroll-text .scroll-text-row span::after {
+    content: "\ea81";
+    font-family: remixicon !important;
+    margin: 0px 15px;
+}
+
+/*====================================
+    slide-left keyframes css
+====================================*/
+@-webkit-keyframes slide-left {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+@keyframes slide-left {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+/************************************* scroll-text css end *************************************/
